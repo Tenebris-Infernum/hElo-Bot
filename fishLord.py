@@ -9,11 +9,13 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    print(f'{member} has joined the fish cult.')
+    #print(f'{member} has joined the fish cult.') # this and line 17 produce a syntax error for some reason
+    print('Someone has joined the fish cult.')
 
 @client.event
 async def on_member_remove(member):
-    print(f'{member} has sinned and has been left to rot in a desert.')
+    #print(f'{member} has sinned and has been left to rot in a desert.')
+    print('Someone has sinned and has been left to rot in a desert.')
 
 #UWU Moderation
 @client.event
