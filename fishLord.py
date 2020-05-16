@@ -20,7 +20,7 @@ async def on_member_remove(member):
 async def on_message(message):
     if 'helo' in message.content.lower():
         print('Someone has summoned the fish lord.')
-        await message.channel.send('Someone has summoned the fish lord.')
+        await message.channel.send('Someone has summoned the fish lord.\nhttps://cdn.discordapp.com/attachments/702253991022821527/710763627145330688/helo-fish-.png')
 
     if 'uwu' in message.content.lower():
         print('Someone has dared to utter the forbidden word.')
