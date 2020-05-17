@@ -16,7 +16,7 @@ async def on_member_join(member):
 
 @client.event
 async def on_member_remove(member):
-    await member.send(f'You have been kicked from the fish cult for they have displeased the fish lord .')
+    await member.send(f'You have been kicked from the fish cult for you have displeased the fish lord .')
 
 @client.event
 async def on_message(message):
@@ -33,4 +33,4 @@ async def on_message(message):
         time.sleep(60)
         await message.author.remove_roles(role)
 
-client.run('NzEwODI2OTU1NDAxOTg2MDY4.Xr6kBA.f2lWX-L6gv6w4C8EY17Dgbkxk04')
+client.run('enter token here')
