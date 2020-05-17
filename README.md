@@ -5,8 +5,8 @@ How To Use Bot:
 ---------------
 - Clone or download the python file onto your computer, (make sure to unzip the file).
 - Download the required files on https://github.com/Rapptz/discord.py and follow instructions.
-- Go on https://discord.com/developers/applications, create a new application, name it whatever you like, open the side bar, press 'Bot' and press 'Add Bot'. Copy the token from the page and paste it in the python file in line 26.
-- Add a role called 'Pit Of Shame', and change the settings so that the user with that role cannot message on any of the channels.
+- Go on https://discord.com/developers/applications, create a new application, name it whatever you like, open the side bar, press 'Bot' and press 'Add Bot'. Scroll down on that page and check the 'Administrator' box, then press the 'copy' button at the bottom of the page and paste the link into a new tab, connect the bot to the server you want to add the bot to. Now go back on the developer portal page and copy the token and paste it in the python file in line 26.
+- Add a role called 'Pit Of Shame' on your server, and change the settings so that the user with that role cannot message on any of the channels.
 - Run the file.
 
 Joining & Leaving A Server:
