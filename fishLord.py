@@ -22,6 +22,12 @@ async def on_member_join(member):
 async def on_member_remove(member):
     await member.send(f'You have been kicked from the fish cult for you have displeased the fish lord .')
 
+#When someone leaves a voice channel
+@client.event
+async def on_voice_state_update(member):
+    username = str(member).split('#', 1)
+    
+
 #When a certain word in a message is detected
 @client.event
 async def on_message(message):
@@ -30,6 +36,11 @@ async def on_message(message):
     if 'helo' in message.content.lower():
         username = str(message.author).split('#', 1)
         await message.channel.send(str(username[0]) + ' has summoned the fish lord. \nhttps://imgur.com/a/BxMCgvh')
+
+    #Hello There
+    if 'hello there' in message.content.lower():
+        username = str(message.author).split('#', 1)
+        await message.channel.send('General Kenobi')
 
     #UWU Moderation
     if 'uwu' in message.content.lower():
@@ -41,4 +52,4 @@ async def on_message(message):
         await message.author.remove_roles(role)
 
 #Token used to connect code to bot     
-client.run('<insert token here>')
+client.run('NzEwODI2OTU1NDAxOTg2MDY4.XsDQUw.hhZLzZYDu2i0fYqRxgmW5E0O81c')
