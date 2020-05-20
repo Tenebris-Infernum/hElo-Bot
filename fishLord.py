@@ -52,4 +52,4 @@ async def on_message(message):
         await message.author.remove_roles(role)
 
 #Token used to connect code to bot     
-client.run('NzEwODI2OTU1NDAxOTg2MDY4.XsDQUw.hhZLzZYDu2i0fYqRxgmW5E0O81c')
+client.run('<token here>')
